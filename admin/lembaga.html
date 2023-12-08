@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IT DEL program-pendidikan</title>
+    <link rel="icon" href="../user/asset/gambar/logoitdel.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+    <link href="asset-admin/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="css/startbootstrap.css" rel="stylesheet">
+    <link href="asset-admin/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
+                <div class="sidebar-brand-icon">
+                    <img class="img-fluid " style="height: 60px;" src="../user/asset/gambar/logoitdel.png" alt="">
+                </div>
+                <div class="sidebar-brand-text mx-3">IT DEL</div>
+            </a>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="pengumuman.html" aria-expanded="true"
+                    aria-controls="collapseUtilities">
+                    <i class="fas fa-bullhorn"></i>
+                    <span>Pengumuman</span>
+                </a>
+            </li>
+
+            <!-- Nav Item - Utilities Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="program-pendidikan.html" data-target="#collapseUtilities"
+                    aria-expanded="true" aria-controls="collapseUtilities">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Program Pendidikan</span>
+                </a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Nav Item - Charts -->
+            <li class="nav-item">
+                <a class="nav-link" href="fasilitas.html">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Fasilitas</span></a>
+            </li>
+
+            <!-- Nav Item - Tables -->
+            <li class="nav-item">
+                <a class="nav-link" href="lembaga.html">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Lembaga</span></a>
+            </li>
+
+
+            <!-- Nav Item - Pages Collapse Menu -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="fas fa-fw fa-cog"></i>
+                    <span>Settings</span>
+                </a>
+            </li>
+
+
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div>
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form
+                        class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..."
+                                aria-label="Search" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">IT DEl</span>
+                                <img class="img-profile rounded-circle" src="../user/asset/gambar/logoitdel.png">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                    <!-- Page Heading -->
+                    <h1 class="h3 mb-2 text-gray-800">Lembaga</h1>
+                    <!-- DataTales Example -->
+                    <button class="btn btn-primary mb-3 mt-3">Tambah Lembaga +</button>
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">Data Lembaga</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Lembaga</th>
+                                            <th>Deskripsi</th>
+                                            <th>Visi</th>
+                                            <th>Misi</th>
+                                            <th>Fungsi</th>
+                                            <th>Gambar</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tfoot>
+                                        <tr>
+                                            <th>No</th>
+                                            <th>Nama Lembaga</th>
+                                            <th>Deskripsi</th>
+                                            <th>Visi</th>
+                                            <th>Misi</th>
+                                            <th>Fungsi</th>
+                                            <th>Gambar</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </tfoot>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td class="font-weight-bold"
+                                                style="color: black; font-size: 18px; white-space: nowrap;">LPPM
+                                                Institut Teknologi Del</td>
+                                            <td style="white-space: nowrap;">
+                                                Lembaga Penelitian dan PengabdianMasyarakat
+                                                (LPPM)
+                                                <br>adalah lembaga yang berada di bawah Institut Teknologi Del
+                                                yang<br>
+                                                mempunyai tugas untuk mengkoordinasikan, memantau, dan menilai<br>
+                                                pelaksanaan kegiatan penelitian dan pengabdian kepada masyarakat<br>
+                                                yang diselenggarakan oleh LPPM, GBK, Program Studi, kelompok dan<br>
+                                                perorangan. LPPM mengusahakan pengendalian dalam hal penggunaan<br>
+                                                sumber daya, serta mengusahakan pengembangan dan peningkatan mutu<br>
+                                                penelitian dan pengabdian kepada masyarakat.
+                                            </td>
+                                            <td style="white-space: nowrap;">Menjadi lembaga yang unggul dan mandiri
+                                                dalam pelaksanaan <br>
+                                                penelitian, khususnya kepada pengembangan dan <br> pemanfaatan teknologi
+                                                informasi dan komunikasi, <br> dan pengabdian kepada masyarakat.</td>
+                                            <td style="white-space: nowrap;">
+                                                <ol>
+                                                    <li>Mengembangkan sumber daya pendidikan dan pengajaran di
+                                                        kampus dan masyarakat <br> umumnya melalui penelitian dan
+                                                        pemanfaatan hasil penelitian.</li>
+                                                    <li>Menghasilkan penelitian dan kajian-kajian akademik
+                                                        berkualitas <br>yang memberikan dampak pada pengembangan
+                                                        institusi, baik untuk tingkat lokal, <br>nasional, maupun
+                                                        internasional.</li>
+                                                    <li>Mendiseminasikan hasil-hasil penelitian melalui seminar,
+                                                        lokakarya, dan <br>media lainnya sehingga mencapai sasaran
+                                                        seluas-luasnya.</li>
+                                                    <li>Mengembangkan kegiatan pengabdian masyarakat yang
+                                                        profesional,<br> berbasis ilmu pengetahuan dan teknologi,
+                                                        khususnya teknologi informasi dan komunikasi.</li>
+                                                    <li>Meningkatkan kemampuan dan peran serta dosen dan mahasiswa
+                                                        dalam penelitian <br> dan pemberdayaan pada masyarakat.</li>
+                                                </ol>
+                                            </td>
+                                            <td style="white-space: nowrap;">
+                                                1.Mengkoordinir penelitian di GBK, prodi dan penelitian oleh kelompok
+                                                atau
+                                                perorangan.<br>
+                                                2.Menyebarkan informasi yang berkaitan dengan penelitian, misalnya
+                                                informasi dari Dirjen Dikti atau Kementerian Riset dan Teknologi.<br>
+                                                3.Membantu meningkatkan kemampuan meneliti para dosen IT Del.<br>
+                                                4.Membantu meningkatkan mutu penelitian dengan mengadakan pelatihan dan
+                                                kegiatan ilmiah untuk diseminasi dan pembahasan hasil penelitian.<br>
+                                                5.Membantu menanggulangi masalah-masalah dalam pelaksanaan penelitian di
+                                                GBK, prodi dan penelitian oleh kelompok atau perorangan.<br>
+                                                6.Membantu dosen dalam publikasi hasil penelitian.<br>
+                                                7.Membantu dosen dengan pengembangan kebijakan insentif untuk kegiatan
+                                                penelitian.<br>
+
+                                            </td>
+                                            <td>
+                                                <img src="https://www.del.ac.id/wp-content/uploads/2019/09/web-7.jpg"
+                                                    alt="" style="width: 400px; height: 300px; ">
+                                            </td>
+                                            <td style="display: flex; flex-direction: column;">
+                                                <button class="btn btn-primary"><i class="fas fa-edit text-white"></i>
+                                                    Edit</button>
+                                                <button class="btn btn-danger mt-2"><i
+                                                        class="fas fa-trash text-white"></i> Delete</button>
+                                            </td>
+                                        </tr>
+
+
+
+
+                                        <tr>
+                                            <td>2</td>
+                                            <td class="font-weight-bold"
+                                                style="color: black; font-size: 18px; white-space: nowrap;">UPT PP-ESTEM
+                                            </td>
+                                            <td>
+                                                Tim yang bertanggung jawab atas kegiatan pelatihan yang dilaksanakan UPT
+                                                PP-ESTEM baik pelatihan untuk internal sivitas maupun untuk pihak
+                                                eksternal. Tim ini dapat dipimpin oleh seorang kepala Divisi jika
+                                                ketersediaan personel mencukupi. Jika tidak, tim ini akan langsung
+                                                bekerja di bawah koordinasi Kepala UPT PP-ESTEM.
+                                            </td>
+                                            <td>Sebagai pusat pengembangan pembelajaran yang unggul dan inovasi secara
+                                                khusus namun tidak terbatas pada bidang Sains, Teknologi, Enginering,
+                                                dan Matematika (STEM) yang berkualitas, efisien, efektif, produktif, dan
+                                                akuntabel.
+                                            </td>
+                                            <td>
+                                                1. Identifikasi Metode, Media, dan Sumber Belajar Berbasis STEM di IT
+                                                Del.<br>
+                                                2. Pengembangan Pendekatan SCL dalam Kegiatan Belajar Mengajar di IT
+                                                Del.<br>
+                                                3. Implementasi Pembelajaran Elektronik (E-learning) di Konteks IT
+                                                Del.<br>
+                                                4. Pelatihan Pembelajaran Inovatif untuk Sivitas IT Del dan
+                                                Eksternal.<br>
+                                                5. Kerjasama Eksternal dalam Pengembangan Pembelajaran Berbasis Inovasi
+                                                di IT Del.<br>
+                                            </td>
+                                            <td>
+                                                1. Meningkatkan kemampuan sivitas dalam melaksanakan pembelajaran yang
+                                                inovatif berbasis STEM, SCL, dan elektronik.<br>
+                                                2. Meningkatkan kemampuan lulusan dengan serapan kerja yang tinggi yang
+                                                dibutuhkan industri dan masyarakat.<br>
+                                                3. Meningkatkan kemampuan tenaga pengajar di lembaga pendidikan yang
+                                                menjadi mitra dalam melaksanakan pembelajaran yang inovatif berbasis
+                                                STEM, SCL, dan elektronik.<br>
+
+                                            </td>
+                                            <td>
+                                                <img src="https://www.del.ac.id/wp-content/uploads/2020/06/Poster-Webinar-A5-470x668.jpg"
+                                                    alt="" style="width: 400px; height: 300px; ">
+                                            </td>
+                                            <td style="display: flex; flex-direction: column;">
+                                                <button class="btn btn-primary"><i class="fas fa-edit text-white"></i>
+                                                    Edit</button>
+                                                <button class="btn btn-danger mt-2"><i
+                                                        class="fas fa-trash text-white"></i> Delete</button>
+                                            </td>
+                                        </tr>
+
+
+
+                                        <tr>
+                                            <td>3</td>
+                                            <td class="font-weight-bold"
+                                                style="color: black; font-size: 18px; white-space: nowrap;">Sistem
+                                                Penjaminan Mutu (SPM)
+                                            </td>
+                                            <td>
+                                                Sesuai arahan dari Direktorat Jenderal Pendidikan Tinggi tentang
+                                                penjaminan mutu perguruan tinggi yang terdiri atas penjaminan mutu
+                                                internal dan penjaminan mutu eksternal, maka Institut Teknologi Del
+                                                sebagai institusi pendidikan yang hendak menghasilkan sumber daya
+                                                manusia dengan kompetensi yang baik harus mewujudkan arahan tersebut.
+                                                Untuk itu dibentuklah SPM IT Del, pada tanggal 14 November 2008.
+                                            </td>
+                                            <td>Menjadi rujukan penjaminan mutu pendidikan tinggi, baik untuk aspek
+                                                pendidikan, penelitian, pengabdian pada masyarakat, dan manajemen
+                                                kelembagaan perguruan tinggi..
+                                            </td>
+                                            <td>
+                                                Marroha, Menjadikan mutu sebagai ruh yang menjiwai program dan kegiatan
+                                                yang diselenggarakan oleh unit kerja dan insan Institut Teknologi Del di
+                                                semua Satuan Akademik dan Satuan Unit Kerja untuk mencapai karya yang
+                                                bermutu dan akuntabel.
+                                            </td>
+                                            <td>
+                                                1. Mengembangkan perangkat dan panduan penjaminan mutu program akademik
+                                                pendidikan, penelitian dan pengabdian kepada masyarakat, serta program
+                                                dan kegiatan non-akademik, yang sifatnya umum.<br>
+                                                2. Mengkordinasikan pelaksanaan kegiatan penjaminan mutu program
+                                                akademik dan nonakademik di lingkungan Institut Teknologi Del.<br>
+                                                3. Melaksanakan kajian-kajian terhadap hasil pelaksanaan penjaminan mutu
+                                                yang dilaksanakan oleh semua Bidang di IT Del, yaitu Bidang Akademik,
+                                                Kemahasiswaan, Sarana Prasarana,<br>
+                                                4. Menyampaikan hasil kajiannya kepada Direktur dan Sidang Akademik.<br>
+                                                5. Sesuai dengan kondisi capaian mutu IT Del, SPM berfungsi menyusun
+                                                standar mutu program dan kegiatan Institut Teknologi Del.
+
+                                            </td>
+                                            <td>
+                                                <img src="https://www.del.ac.id/wp-content/uploads/2023/01/IMG_5524.jpg"
+                                                    alt="" style="width: 400px; height: 300px; ">
+                                            </td>
+                                            <td style="display: flex; flex-direction: column;">
+                                                <button class="btn btn-primary"><i class="fas fa-edit text-white"></i>
+                                                    Edit</button>
+                                                <button class="btn btn-danger mt-2"><i
+                                                        class="fas fa-trash text-white"></i> Delete</button>
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>4 </td>
+                                            <td class="font-weight-bold"
+                                                style="color: black; font-size: 18px; white-space: nowrap;">Koperasi
+                                            </td>
+                                            <td>
+                                                Koperasi Serba Usaha (KSU) IT Del dimulai kembali pada tanggal 8 Agustus
+                                                2008 sampai dengan saat ini, tahun 2014. KSU IT Del didirikan
+                                                berdasarkan badan hukum dengan No Badan Hukum No : 49.A / BH / KUKM-TS /
+                                                2004, per tanggal 7 April 2004. Yang menjadi anggota KSU IT Del adalah
+                                                dosen, staff, karyawan dan mahasiswa.
+                                            </td>
+                                            <td>--
+                                            </td>
+                                            <td>
+                                                --
+                                            </td>
+                                            <td>
+                                                1.Menjual kebutuhan bagi anggota dan mahasiswa <br>
+                                                2.Menyediakan jasa printer <br>
+                                                3. Menyediakan angsuran barang elektronik <br>
+                                                4. Bekerjasama dengan klub usaha mahasiswa dalam melakukan penjualan
+                                                barang koperasi <br>
+                                            </td>
+                                            <td>
+                                                <img src="https://lh3.googleusercontent.com/p/AF1QipMJfoJwjzFF9-UrDCeyBCvLRSZgl7nKeafO94Pu=s1360-w1360-h1020"
+                                                    alt="" style="width: 400px; height: 300px; ">
+                                            </td>
+                                            <td style="display: flex; flex-direction: column;">
+                                                <button class="btn btn-primary"><i class="fas fa-edit text-white"></i>
+                                                    Edit</button>
+                                                <button class="btn btn-danger mt-2"><i
+                                                        class="fas fa-trash text-white"></i> Delete</button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Rivael dan Veri PAP 2023</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a class="btn btn-primary" href="login.html">Logout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="asset-admin/jquery/jquery.min.js"></script>
+    <script src="asset-admin/datatables/jquery.dataTables.min.js"></script>
+    <script src="js/admin.js"></script>
+
+</body>
+
+</html>
